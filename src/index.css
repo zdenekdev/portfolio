@@ -1,13 +1,220 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-primary: #767676;
+  --color-secondary: #147efb;
+  --color-tertiary: #f9f9f9;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 3rem;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+}
+
+.header__title {
+  font-size: 1.5rem;
+}
+
+.header__nav {
+  display: flex;
+  column-gap: 1rem;
+  list-style: none;
+}
+
+.header__nav-item {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-tertiary);
+  width: 100%;
+  height: 100vh;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 41rem;
+  max-width: 70rem;
+}
+
+.hero__main {
+  display: flex;
+  gap: 5rem;
+}
+
+.hero__text {
+  max-width: 32rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-block: 2rem;
+}
+
+.hero__intro,
+.about__text {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.hero__icons {
+  display: flex;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.hero__in-icon,
+.hero__github-icon {
+  color: #2d2e32;
+  height: 1.9rem;
+  cursor: pointer;
+}
+
+.hero__skills {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero__skills-text {
+  font-size: 1.2rem;
+  border-right: 2px solid var(--color-primary);
+  padding-right: 1rem;
+  margin-right: 3rem;
+}
+
+.hero__logos-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 4rem;
+  width: 4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+}
+
+.hero__logo-img {
+  height: auto;
+  width: 2.5rem;
+}
+
+.header__nav-item:hover,
+.hero__in-icon:hover,
+.hero__github-icon:hover {
+  color: var(--color-secondary);
+}
+
+.hero__img {
+  height: 20rem;
+  width: 20rem;
+  background-image: url(images/portrait-photo-2379004.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 100%;
+}
+
+.about__container {
+  max-width: 70rem;
+}
+
+.about__content {
+  display: flex;
+  gap: 5rem;
+}
+
+.about__img-side {
+  height: 300px;
+}
+
+.about__img {
+  height: 100%;
+}
+
+.about__heading {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.7rem;
+}
+
+.about__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio {
+  background-color: var(--color-tertiary);
+  padding: 10rem 0;
+  width: 100%;
+}
+
+.portfolio__container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 2rem;
+}
+
+.portfolio__project {
+  display: flex;
+}
+
+.portfolio__img-container {
+  width: 450px;
+  height: auto;
+  overflow: hidden;
+}
+
+.portfolio__img {
+  width: 100%;
 }
