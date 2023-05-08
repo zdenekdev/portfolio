@@ -299,6 +299,11 @@
   color: #2d2e32;
 }
 
+.portfolio__github-link:hover,
+.portfolio__demo-link:hover {
+  color: var(--color-secondary);
+}
+
 .portfolio__github-icon {
   font-size: 1.6rem;
 }
