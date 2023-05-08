@@ -87,7 +87,8 @@
 
 .hero__intro,
 .about__text,
-.portfolio__description {
+.portfolio__description,
+.contact__details {
   font-size: 1.2rem;
   color: var(--color-primary);
 }
@@ -184,7 +185,8 @@
 }
 
 .about__heading,
-.porfolio__heading {
+.porfolio__heading,
+.contact__heading {
   font-size: 1.1rem;
   text-transform: uppercase;
   color: var(--color-secondary);
@@ -307,4 +309,66 @@
 
 .portfolio__arrow-icon {
   font-size: 1.2rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 0;
+  width: 100%;
+}
+
+.contact__container {
+  max-width: 70rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  font-size: 1.5rem;
+  margin: 1.3rem 0 4rem 0;
+}
+
+.contact__icons {
+  display: flex;
+  gap: 5rem;
+}
+
+.contact__icon-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 1.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact__email-icon {
+  color: var(--color-secondary);
+  font-size: 1.7rem;
+}
+
+.contact__phone-icon {
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
