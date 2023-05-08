@@ -86,7 +86,8 @@
 }
 
 .hero__intro,
-.about__text {
+.about__text,
+.portfolio__description {
   font-size: 1.2rem;
   color: var(--color-primary);
 }
@@ -180,7 +181,9 @@
   height: 100%;
 }
 
-.about__heading {
+.about__heading,
+.porfolio__heading {
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: var(--color-secondary);
   margin-bottom: 0.7rem;
@@ -205,16 +208,101 @@
   padding: 0 2rem;
 }
 
+.portfolio__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template: auto auto / 1fr;
+  gap: 2.5rem;
+  height: auto;
+  width: 100%;
+}
+
 .portfolio__project {
   display: flex;
+  gap: 4rem;
+  height: 25rem;
+  padding: 1.2rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .portfolio__img-container {
   width: 450px;
   height: auto;
+  border-radius: 1.1rem;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio__img {
   width: 100%;
+  transform: translateY(0%);
+  transition: transform 10s ease-in-out 0s;
+}
+.portfolio__img:hover {
+  width: 100%;
+  transform: translateY(-85%);
+  transition: transform 10s ease-in-out 0s;
+}
+
+.portfolio__text {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio__description {
+  margin-bottom: 2rem;
+}
+
+.portfolio__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio__stack {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.portfolio__tech {
+  padding: 0.6rem 0.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.portfolio__github-link,
+.portfolio__demo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: #2d2e32;
+}
+
+.portfolio__github-icon {
+  font-size: 1.6rem;
+}
+
+.portfolio__arrow-icon {
+  font-size: 1.2rem;
 }
