@@ -372,3 +372,49 @@
   flex-direction: column;
   gap: 0.4rem;
 }
+
+.footer {
+  padding: 3rem 0;
+  background-color: #2d2e32;
+  width: 100%;
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 0 2rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__c {
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__in-icon {
+  color: #fff;
+  height: 1.4rem;
+  transition: 0.1s;
+}
+
+.footer__github-icon {
+  color: #fff;
+  height: 1.5rem;
+  transition: 0.1s;
+}
+
+.footer__in-icon:hover,
+.footer__github-icon:hover {
+  transform: scale(1.1);
+}
