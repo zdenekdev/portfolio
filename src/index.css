@@ -145,11 +145,27 @@
   width: 4rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   border-radius: 50%;
+  background-color: #fff;
 }
 
 .hero__logo-img {
   height: auto;
+  width: 2.3rem;
+}
+
+.hero__logo-react {
+  height: auto;
   width: 2.5rem;
+}
+
+.hero__logo-redux {
+  height: auto;
+  width: 2rem;
+}
+
+.hero__logo-tailwind {
+  height: auto;
+  width: 2.2rem;
 }
 
 .header__nav-item:hover,

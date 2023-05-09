@@ -7,6 +7,8 @@ import javascriptLogo from "../images/javascript.svg";
 import reactLogo from "../images/react.svg";
 import tailwindLogo from "../images/tailwind.svg";
 import sassLogo from "../images/sass.svg";
+import nextJsLogo from "../images/nextjs.svg";
+import reduxLogo from "../images/redux.svg";
 
 function Hero() {
   return (
@@ -81,7 +83,7 @@ function Hero() {
                 </li>
                 <li className="hero__logo">
                   <img
-                    className="hero__logo-img"
+                    className="hero__logo-react"
                     src={reactLogo}
                     alt="react_js_logo"
                     title="React JS"
@@ -89,7 +91,23 @@ function Hero() {
                 </li>
                 <li className="hero__logo">
                   <img
+                    className="hero__logo-redux"
+                    src={reduxLogo}
+                    alt="react_js_logo"
+                    title="React JS"
+                  />
+                </li>
+                <li className="hero__logo">
+                  <img
                     className="hero__logo-img"
+                    src={nextJsLogo}
+                    alt="react_js_logo"
+                    title="React JS"
+                  />
+                </li>
+                <li className="hero__logo">
+                  <img
+                    className="hero__logo-tailwind"
                     src={tailwindLogo}
                     alt="tailwind_css_logo"
                     title="Tailwind CSS"
