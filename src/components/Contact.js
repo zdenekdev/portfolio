@@ -10,7 +10,7 @@ import {
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contacts">
       <div className="contact__container">
         <div className="contact__content">
           <div className="contact__headline">

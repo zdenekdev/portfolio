@@ -5,10 +5,26 @@ function Header() {
     <div className="header">
       <h3 className="header__title">Zdeněk Kučera</h3>
       <ul className="header__nav">
-        <li className="header__nav-item">Home</li>
-        <li className="header__nav-item">About</li>
-        <li className="header__nav-item">Projects</li>
-        <li className="header__nav-item">Contacts</li>
+        <li>
+          <a className="header__nav-item" href="#home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a className="header__nav-item" href="#about">
+            About
+          </a>
+        </li>
+        <li>
+          <a className="header__nav-item" href="#projects">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a className="header__nav-item" href="#contacts">
+            Contacts
+          </a>
+        </li>
       </ul>
     </div>
   );

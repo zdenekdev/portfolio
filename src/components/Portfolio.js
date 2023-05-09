@@ -9,7 +9,7 @@ import {
 
 function Portfolio() {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="projects">
       <div className="portfolio__container">
         <div className="portfolio__content">
           <h4 className="porfolio__heading">Portfolio</h4>

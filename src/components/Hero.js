@@ -12,7 +12,7 @@ import reduxLogo from "../images/redux.svg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__container">
         <div className="hero__content">
           <div className="hero__main">
