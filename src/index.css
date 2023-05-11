@@ -33,6 +33,7 @@
 
 .header__title {
   font-size: 1.5rem;
+  white-space: nowrap;
 }
 
 .header__nav {
@@ -50,6 +51,9 @@
   text-decoration: none;
 }
 
+.header__hamburger-icon {
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -63,6 +67,7 @@
   background-color: var(--color-tertiary);
   width: 100%;
   height: 100vh;
+  padding: 7rem 0;
 }
 
 .hero__container,
@@ -79,15 +84,17 @@
 
 .hero__content {
   display: flex;
-  align-items: center;
-  margin-top: 5rem;
-  height: 40rem;
+  flex-direction: column;
+  width: 100%;
   position: relative;
 }
 
 .hero__main {
   display: flex;
   gap: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  transition: all 1s ease-in-out;
 }
 
 .hero__text {
@@ -97,6 +104,7 @@
 .hero__title {
   font-size: 3rem;
   margin-block: 2rem;
+  transition: all 1s ease-in-out;
 }
 
 .hero__intro,
@@ -123,9 +131,6 @@
 .hero__skills {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .hero__skills-text {
@@ -133,11 +138,17 @@
   border-right: 2px solid var(--color-primary);
   padding-right: 1rem;
   margin-right: 3rem;
+  white-space: nowrap;
+}
+
+.hero__logos {
+  display: flex;
 }
 
 .hero__logos-list {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero__logo {
@@ -181,8 +192,10 @@
 }
 
 .hero__img {
+  transition: all 1s ease-in-out;
   height: 20rem;
   width: 20rem;
+  flex-shrink: 0;
   background-image: url(images/portrait-photo-2379004.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -194,21 +207,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40rem;
+  padding: 7rem 0;
   width: 100%;
 }
 
 .about__content {
   display: flex;
+  align-items: center;
   gap: 5rem;
 }
 
-.about__img-side {
-  height: 300px;
+.about__side-img {
+  max-width: 420px;
+  flex-shrink: 0;
 }
 
 .about__img {
-  height: 100%;
+  width: 100%;
   border-radius: 1.1rem;
 }
 
@@ -231,13 +246,14 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-tertiary);
-  padding: 10rem 0;
+  padding: 7rem 0;
   width: 100%;
 }
 
 .portfolio__content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .portfolio__grid {
@@ -259,7 +275,7 @@
 }
 
 .portfolio__img-container {
-  width: 455px;
+  max-width: 455px;
   height: auto;
   border-radius: 1.1rem;
   overflow: hidden;
@@ -280,10 +296,10 @@
 .portfolio__text {
   display: flex;
   flex-direction: column;
-  width: 26rem;
-  height: auto;
   justify-content: center;
   text-align: center;
+  height: auto;
+  max-width: 23rem;
 }
 
 .portfolio__description {
@@ -432,4 +448,142 @@
 .footer__in-icon:hover,
 .footer__github-icon:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+  }
+
+  .hero__main {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero__skills {
+    flex-direction: column;
+  }
+
+  .hero__icons {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero__skills-text {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    border-right: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .hero__logos {
+    max-width: 28rem;
+  }
+
+  .hero__logos-list {
+    justify-content: center;
+  }
+
+  .about__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .about__text {
+    max-width: 35rem;
+  }
+
+  .portfolio {
+    padding: 6rem 0;
+  }
+
+  .portfolio__content {
+    align-items: center;
+  }
+
+  .portfolio__img-container {
+    max-width: 500px;
+  }
+
+  .portfolio__project {
+    flex-direction: column;
+    align-items: center;
+    height: 45rem;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .portfolio__links {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .about,
+  .portfolio,
+  .contact {
+    padding: 5rem 0;
+  }
+
+  .hero__main {
+    margin-top: 2.5rem;
+  }
+
+  .hero__img {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .contact__headline {
+    text-align: center;
+  }
+
+  .contact__title {
+    margin-bottom: 3rem;
+  }
+
+  .contact__icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact__icon-box {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer__c-text {
+    white-space: nowrap;
+  }
 }

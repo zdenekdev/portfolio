@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer__container">
         <div className="footer__content">
           <div className="footer__c">
-            <h3>© 2023 Zdeněk Kučera</h3>
+            <h3 className="footer__c-text">© 2023 Zdeněk Kučera</h3>
           </div>
           <div className="footer__socials">
             <a href="http://" target="_blank" rel="noreferrer">
