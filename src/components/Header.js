@@ -15,7 +15,9 @@ function Header() {
 
   return (
     <div className="header">
-      <h2 className="header__title">Zdeněk Kučera</h2>
+      <a className="header__title-link" href="#home">
+        <h2 className="header__title">Zdenek Kucera</h2>
+      </a>
       <ul className="header__nav">
         <li>
           <a className="header__nav-item" href="#home">
@@ -38,8 +40,8 @@ function Header() {
           </a>
         </li>
       </ul>
-      <div className="header__mobile-menu">
-        <i className="header__hamburger" onClick={menuOpen}>
+      <div className="header__mobile-menu" onClick={menuOpen}>
+        <i className="header__hamburger">
           {/* <Bars3Icon className="header__hamburger-icon" /> */}
           <FontAwesomeIcon className="header__hamburger-icon" icon={faBars} />
         </i>

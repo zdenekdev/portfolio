@@ -11,20 +11,31 @@ function About() {
           </div>
           <div className="about__text-side">
             <h4 className="about__heading">About me</h4>
-            <h3 className="about__title">
-              A dedicated Front-end Developer
-              <br /> based in Belgrade, Serbia 📍
-            </h3>
-            <p className="about__text">
-              As a Junior Front-End Developer, I possess an impressive arsenal
-              of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-              excel in designing and maintaining responsive websites that offer
-              a smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques. I am also
-              a team player who thrives in collaborating with cross-functional
-              teams to produce outstanding web applications.
-            </p>
+            <h3 className="about__title">A dedicated Front-End Developer</h3>
+            <div className="about__text">
+              <p className="about__text-para">
+                I'm a self taught Front-End Developer with a working proficiency
+                in HTML, CSS, JavaScript, TypeScript, React, Tailwind, and SCSS.
+                Additionally, I have gained expertise proficiency in Redux, the
+                state management tool, and Firebase, the cloud-hosted database.
+              </p>
+              <p className="about__text-para">
+                I've used all mentioned technologies in my projects in portfolio
+                section.
+              </p>
+              {/* <p className="about__text-para">
+                I am passionate about front-end development and always eager to
+                learn and explore new technologies to enhance my skills further.
+              </p> */}
+              <p className="about__text-para">
+                {/* My goal is to continuously grow as a developer and be valuable team member.
+                deepen my knowledge of  */}
+                My goal is to continuously grow as a developer while deepening
+                my knowledge of front-end technologies. I would love to be a
+                valuable member of the team that is passionate about what they
+                create and consistently move forward.
+              </p>
+            </div>
           </div>
         </div>
       </div>

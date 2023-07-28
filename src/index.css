@@ -4,6 +4,7 @@
   --color-primary: #767676;
   --color-secondary: #147efb;
   --color-tertiary: #f9f9f9;
+  --color-base: #2d2e32;
 }
 
 * {
@@ -22,7 +23,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h4,
@@ -49,10 +50,15 @@ h3 {
   background-color: #fff;
 }
 
+.header__title-link {
+  text-decoration: none;
+  color: var(--color-base);
+}
+
 .header__title {
   font-size: 1.3rem;
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .header__nav {
@@ -64,9 +70,9 @@ h3 {
 
 .header__nav-item {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  color: #2d2e32;
+  color: var(--color-base);
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
@@ -75,17 +81,13 @@ h3 {
   display: none;
 }
 
-.header__mobile-nav-item {
-  list-style: none;
-}
-
 .header__hamburger {
   cursor: pointer;
 }
 
 .header__hamburger-icon {
   height: 1.3rem;
-  color: #2d2e32;
+  color: var(--color-base);
 }
 
 .header__hamburger-icon:hover {
@@ -100,7 +102,7 @@ h3 {
   transform: translateX(-100%);
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #222;
   transition: all 0.3s ease-in-out;
@@ -110,8 +112,8 @@ h3 {
 .header__mobile-nav-exit {
   color: #fff;
   position: absolute;
-  top: 1.7rem;
-  right: 4rem;
+  top: 1.3rem;
+  right: 2.5rem;
   user-select: none;
   cursor: pointer;
 }
@@ -131,7 +133,8 @@ h3 {
 }
 
 .header__mobile-nav-item {
-  margin-bottom: 2rem;
+  margin: 1rem;
+  list-style: none;
 }
 
 .header__mobile-nav-link {
@@ -247,8 +250,8 @@ h3 {
   align-items: center;
   justify-content: center;
   list-style: none;
-  height: 4rem;
-  width: 4rem;
+  height: 3.7rem;
+  width: 3.7rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   border-radius: 50%;
   background-color: #fff;
@@ -256,21 +259,22 @@ h3 {
 
 .hero__logo-img {
   height: auto;
-  width: 2.3rem;
+  width: 2rem;
+}
+
+.hero__logo-typescript {
+  width: 2.5rem;
 }
 
 .hero__logo-react {
-  height: auto;
   width: 2.5rem;
 }
 
 .hero__logo-redux {
-  height: auto;
   width: 2rem;
 }
 
 .hero__logo-tailwind {
-  height: auto;
   width: 2.2rem;
 }
 
@@ -332,6 +336,10 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+.about__text-para {
+  padding-bottom: 1rem;
+}
+
 .portfolio {
   display: flex;
   justify-content: center;
@@ -357,16 +365,16 @@ h3 {
 
 .portfolio__project {
   display: flex;
-  gap: 4rem;
-  height: 25rem;
-  padding: 1.2rem;
+  gap: 2.5rem;
+  height: 26.5rem;
+  padding: 2rem;
   border-radius: 1.1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
 .portfolio__img-container {
-  max-width: 455px;
+  max-width: 490px;
   height: auto;
   border-radius: 1.1rem;
   overflow: hidden;
@@ -375,13 +383,15 @@ h3 {
 
 .portfolio__img {
   width: 100%;
-  transform: translateY(0%);
-  transition: transform 10s ease-in-out 0s;
+  /* transform: translateY(0%); */
+  /* transition: transform 10s ease-in-out 0s; */
+  transition: all 0.13s ease-in-out;
 }
 .portfolio__img:hover {
-  width: 100%;
-  transform: translateY(-85%);
-  transition: transform 10s ease-in-out 0s;
+  /* width: 100%; */
+  /* transform: translateY(-85%);
+  transition: transform 10s ease-in-out 0s; */
+  transform: scale(1.025);
 }
 
 .portfolio__text {
@@ -394,27 +404,54 @@ h3 {
 }
 
 .portfolio__description {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .portfolio__title {
   text-transform: uppercase;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
 }
 
 .portfolio__stack {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
   font-size: 1.1rem;
   font-weight: 500;
+  list-style: none;
 }
 
 .portfolio__tech {
-  padding: 0.6rem 0.7rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.1rem;
+  /* background-color: red; */
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+}
+
+.portfolio__tech-img {
+  height: 1.7rem;
+  width: auto;
+}
+
+.portfolio__tech-tailwind {
+  height: 1rem;
+}
+
+.portfolio__tech-typescript {
+  height: 1.9rem;
+}
+
+.portfolio__tech-sass {
+  height: 2rem;
 }
 
 .portfolio__links {
@@ -430,7 +467,7 @@ h3 {
   align-items: center;
   gap: 0.3rem;
   text-decoration: none;
-  color: #2d2e32;
+  color: var(--color-base);
 }
 
 .portfolio__github-icon {
@@ -502,7 +539,7 @@ h3 {
   display: flex;
   justify-content: center;
   padding: 3rem 0;
-  background-color: #2d2e32;
+  background-color: var(--color-base);
   width: 100%;
 }
 
@@ -589,6 +626,7 @@ h3 {
   }
 
   .about__content {
+    max-width: 27rem;
     flex-direction: column;
     text-align: center;
     gap: 2.5rem;
@@ -613,7 +651,7 @@ h3 {
   .portfolio__project {
     flex-direction: column;
     align-items: center;
-    height: 45rem;
+    height: 50rem;
     width: fit-content;
     margin: 0 auto;
     gap: 2rem;
@@ -685,5 +723,29 @@ h3 {
   }
   .footer__c-text {
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .hero__container,
+  .about__container,
+  .portfolio__container,
+  .contact__container,
+  .footer__container {
+    padding: 0 1.6rem;
+  }
+
+  .portfolio__project {
+    height: 47rem;
+    padding: 1rem;
+  }
+
+  .header__mobile-nav-exit {
+    top: 1.2rem;
+    right: 1.6rem;
   }
 }

@@ -12,7 +12,7 @@ function Contact() {
         <div className="contact__content">
           <div className="contact__headline">
             <h4 className="contact__heading">Contact</h4>
-            <h3 className="contact__title">Máte zájem o spolupráci?</h3>
+            <h3 className="contact__title">Get in touch with me</h3>
           </div>
           <div className="contact__icons">
             <div className="contact__icon-box">
@@ -33,7 +33,7 @@ function Contact() {
                 </i>
               </span>
               <div className="contact__info">
-                <h3>Telefon</h3>
+                <h3>Phone</h3>
                 <p className="contact__details">+420 608 966 345</p>
               </div>
             </div>
