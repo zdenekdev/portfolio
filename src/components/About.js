@@ -14,9 +14,9 @@ function About() {
             <h3 className="about__title">A dedicated Front-End Developer</h3>
             <div className="about__text">
               <p className="about__text-para">
-                I'm a self taught Front-End Developer with a working proficiency
-                in HTML, CSS, JavaScript, TypeScript, React, Tailwind, and SCSS.
-                Additionally, I have gained expertise proficiency in Redux, the
+                I'm a self taught Front-End Developer with a proficiency in
+                HTML, CSS, JavaScript, TypeScript, React, Tailwind, and SCSS.
+                Additionally, I have hands-on experience working with Redux, the
                 state management tool, and Firebase, the cloud-hosted database.
               </p>
               <p className="about__text-para">
