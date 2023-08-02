@@ -291,7 +291,7 @@ h3 {
   height: 19rem;
   width: 19rem;
   flex-shrink: 0;
-  /* background-image: url(images/portrait-photo-2379004.jpeg); */
+  background-image: url(images/portrait_photo.png);
   background-color: var(--color-primary);
   background-position: center;
   background-repeat: no-repeat;
