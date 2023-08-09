@@ -341,6 +341,11 @@ h3 {
   padding-bottom: 1rem;
 }
 
+.about__text-link {
+  color: var(--color-base);
+  font-weight: 600;
+}
+
 .portfolio {
   display: flex;
   justify-content: center;

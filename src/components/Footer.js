@@ -11,7 +11,11 @@ function Footer() {
             <h3 className="footer__copyright-text">© 2023 Zdenek Kucera</h3>
           </div>
           <div className="footer__socials">
-            <a href="http://" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/kucerazdenek/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>
                 <FontAwesomeIcon
                   className="footer__in-icon"

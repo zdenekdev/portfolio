@@ -20,7 +20,10 @@ function About() {
                 state management tool, and Firebase, the cloud-hosted database.
               </p>
               <p className="about__text-para">
-                I've used all mentioned technologies in my projects in portfolio
+                I've used all mentioned technologies in my projects in the{" "}
+                <a className="about__text-link" href="#projects">
+                  portfolio
+                </a>{" "}
                 section.
               </p>
               {/* <p className="about__text-para">
@@ -32,7 +35,7 @@ function About() {
                 deepen my knowledge of  */}
                 My goal is to continuously grow as a developer while deepening
                 my knowledge of front-end technologies. I would love to be a
-                valuable member of the team that is passionate about what they
+                valuable member of a team that is passionate about what they
                 create and consistently move forward.
               </p>
             </div>

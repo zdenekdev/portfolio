@@ -31,7 +31,7 @@ function Header() {
         </li>
         <li>
           <a className="header__nav-item" href="#projects">
-            Projects
+            Portfolio
           </a>
         </li>
         <li>

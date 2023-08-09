@@ -29,7 +29,7 @@ function Hero() {
                   aria-label="linkedin"
                   rel="noreferrer"
                   target="_blank"
-                  href="#"
+                  href="https://www.linkedin.com/in/kucerazdenek/"
                 >
                   <i>
                     <FontAwesomeIcon
