@@ -1,5 +1,4 @@
 <br>
-<br>
 <div align='center'><img style="padding-top: 300px; width:35%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/my-portfolio-github-title.png'/></div>
 <h2>About the project</h2>
 
