@@ -180,6 +180,7 @@ h3 {
   flex-direction: column;
   width: 100%;
   position: relative;
+  padding-top: 1.7rem;
 }
 
 .hero__main {
