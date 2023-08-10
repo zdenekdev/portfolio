@@ -1,4 +1,3 @@
-<h1>My portfolio</h1>
 <div align='center'><img style="border-radius:50%; width:35%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/my-portfolio-github-title.png'/></div>
 <h2>About the project</h2>
 
