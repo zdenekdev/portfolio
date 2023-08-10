@@ -108,7 +108,7 @@ function Portfolio() {
                   </a>
                   <a
                     className="portfolio__demo-link"
-                    href="https://stand-up-silk-five.vercel.app/"
+                    href="https://stand-up-events.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
