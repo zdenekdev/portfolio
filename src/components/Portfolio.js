@@ -26,7 +26,7 @@ function Portfolio() {
             <div className="portfolio__project">
               <div className="portfolio__img-container">
                 <a
-                  href="https://stand-up-silk-five.vercel.app/"
+                  href="https://stand-up-events.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
