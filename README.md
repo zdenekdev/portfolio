@@ -1,4 +1,5 @@
-<div align='center'><img style="width:35%; border-radius:50%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/about-img.png'/></div>
+<h1>My portfolio</h1>
+<div align='center'><img style="border-radius:50%; width:10%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/about-img.png'/></div>
 <h2>About the project</h2>
 
 <p><b>My portfolio</b> is the webpage that showcases the projects I have worked on to apply and strenghten my knowledge of development technologies I have learned through completed courses.
