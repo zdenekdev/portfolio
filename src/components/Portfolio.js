@@ -21,7 +21,8 @@ function Portfolio() {
     <div className="portfolio" id="projects">
       <div className="portfolio__container">
         <div className="portfolio__content">
-          <h4 className="porfolio__heading">Project portfolio</h4>
+          <h4 className="portfolio__heading">Portfolio</h4>
+          <h3 className="portfolio__title">My web development projects</h3>
           <div className="portfolio__grid">
             <div className="portfolio__project">
               <div className="portfolio__img-container">
@@ -38,7 +39,7 @@ function Portfolio() {
                 </a>
               </div>
               <div className="portfolio__text">
-                <h3 className="portfolio__title">stand up events</h3>
+                <h3 className="portfolio__project-title">stand up events</h3>
                 <p className="portfolio__description">
                   Search for stand up events and shows featuring your favorite
                   comedians. This web application allows you to filter events by
@@ -137,7 +138,7 @@ function Portfolio() {
                 </a>
               </div>
               <div className="portfolio__text">
-                <h3 className="portfolio__title">iTunes playlist</h3>
+                <h3 className="portfolio__project-title">iTunes playlist</h3>
                 <p className="portfolio__description">
                   Search for your favorite songs, albums or interprets. This
                   simple web application utilizes iTunes search API, which
