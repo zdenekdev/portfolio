@@ -1,7 +1,5 @@
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Bars3Icon } from "@heroicons/react/24/solid";
-
 import React, { useState } from "react";
 
 function Header() {

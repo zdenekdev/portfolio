@@ -1,12 +1,9 @@
 import React from "react";
 import standUp from "../images/projects/stand-up.webp";
 import itunesPlaylist from "../images/projects/itunes-playlist.webp";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowUp,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import nextJsLogo from "../images/nextjs.svg";
 import typescriptLogo from "../images/typescript.svg";
 import tailwindLogo from "../images/tailwind.svg";

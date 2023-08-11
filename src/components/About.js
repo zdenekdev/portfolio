@@ -26,13 +26,7 @@ function About() {
                 </a>{" "}
                 section.
               </p>
-              {/* <p className="about__text-para">
-                I am passionate about front-end development and always eager to
-                learn and explore new technologies to enhance my skills further.
-              </p> */}
               <p className="about__text-para">
-                {/* My goal is to continuously grow as a developer and be valuable team member.
-                deepen my knowledge of  */}
                 My goal is to continuously grow as a developer while deepening
                 my knowledge of front-end technologies. I would love to be a
                 valuable member of a team that is passionate about what they
