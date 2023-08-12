@@ -646,6 +646,7 @@ h3 {
 
   .portfolio__content {
     align-items: center;
+    text-align: center;
   }
 
   .portfolio__img-container {
