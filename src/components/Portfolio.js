@@ -25,21 +25,21 @@ function Portfolio() {
           </Reveal>
           <div className="portfolio__grid">
             <div className="portfolio__project">
-              <div className="portfolio__img-container">
-                <a
-                  href="https://stand-up-events.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Reveal>
+              <Reveal>
+                <div className="portfolio__img-container">
+                  <a
+                    href="https://stand-up-events.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       className="portfolio__img"
                       src={standUp}
                       alt="project website"
                     />
-                  </Reveal>
-                </a>
-              </div>
+                  </a>
+                </div>
+              </Reveal>
               <div className="portfolio__text">
                 <Reveal>
                   <h3 className="portfolio__project-title">stand up events</h3>
@@ -131,21 +131,21 @@ function Portfolio() {
               </div>
             </div>
             <div className="portfolio__project">
-              <div className="portfolio__img-container">
-                <a
-                  href="https://itunes-playlist.vercel.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Reveal>
+              <Reveal>
+                <div className="portfolio__img-container">
+                  <a
+                    href="https://itunes-playlist.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       className="portfolio__img"
                       src={itunesPlaylist}
                       alt="project website"
                     />
-                  </Reveal>
-                </a>
-              </div>
+                  </a>
+                </div>
+              </Reveal>
               <div className="portfolio__text">
                 <Reveal>
                   <h3 className="portfolio__project-title">iTunes playlist</h3>
