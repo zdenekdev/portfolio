@@ -1,5 +1,5 @@
 <br>
-<div align='center'><img style="padding-top: 300px; width:35%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/my-portfolio-github-title.png'/></div>
+<div align='center'><img style="width:35%" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/my-portfolio-github-title.png'/></div>
 <h2>About the project</h2>
 
 <p><b>My portfolio</b> is the webpage that showcases the projects I have worked on to apply and strenghten my knowledge of development technologies I have learned through completed courses.
@@ -18,5 +18,5 @@
 <h3>Home page</h3>
 
 <div align='center'>
-<img  style="border: 2px solid  gray; border-radius:15px" src='https://github.com/zdenekdev/portfolio/blob/main/src/images/projects/portfolio.png'/>
+<img src='https://github.com/zdenekdev/portfolio/blob/main/src/images/projects/portfolio.png'/>
 </div>
