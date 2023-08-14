@@ -13,13 +13,10 @@ function RevealSlower({ children, width }) {
   }, [inView]);
 
   return (
-    <div
-      ref={animRef}
-      style={{ position: "relative", width, overflow: "hidden" }}
-    >
+    <div ref={animRef} style={{ position: "relative", width }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: 40 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
