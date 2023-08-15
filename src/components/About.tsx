@@ -8,15 +8,20 @@ function About() {
       <div className="about__container">
         <div className="about__content">
           <div className="about__side-img">
-            <img className="about__img" src={macImg} alt="Macbook" />
+            <Reveal>
+              <img className="about__img" src={macImg} alt="Macbook" />
+            </Reveal>
           </div>
 
           <div className="about__text-side">
-            <div>
-              <h4 className="about__heading">About me</h4>
-              <h3 className="about__title">A dedicated Front-End Developer</h3>
-            </div>
-
+            <Reveal>
+              <div>
+                <h4 className="about__heading">About me</h4>
+                <h3 className="about__title">
+                  A dedicated Front-End Developer
+                </h3>
+              </div>
+            </Reveal>
             <Reveal>
               <div className="about__text">
                 <p className="about__text-para">
