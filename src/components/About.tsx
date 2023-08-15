@@ -12,14 +12,11 @@ function About() {
           </div>
 
           <div className="about__text-side">
-            <Reveal>
-              <div>
-                <h4 className="about__heading">About me</h4>
-                <h3 className="about__title">
-                  A dedicated Front-End Developer
-                </h3>
-              </div>
-            </Reveal>
+            <div>
+              <h4 className="about__heading">About me</h4>
+              <h3 className="about__title">A dedicated Front-End Developer</h3>
+            </div>
+
             <Reveal>
               <div className="about__text">
                 <p className="about__text-para">
