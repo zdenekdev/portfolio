@@ -7,11 +7,10 @@ function About() {
     <section className="about" id="about">
       <div className="about__container">
         <div className="about__content">
-          <Reveal>
-            <div className="about__side-img">
-              <img className="about__img" src={macImg} alt="Macbook" />
-            </div>
-          </Reveal>
+          <div className="about__side-img">
+            <img className="about__img" src={macImg} alt="Macbook" />
+          </div>
+
           <div className="about__text-side">
             <Reveal>
               <div>
