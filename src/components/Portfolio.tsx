@@ -20,12 +20,14 @@ function Portfolio() {
       <div className="portfolio__container">
         <div className="portfolio__content">
           <Reveal>
-            <h4 className="portfolio__heading">Portfolio</h4>
-            <h3 className="portfolio__title">My web development projects</h3>
+            <div>
+              <h4 className="portfolio__heading">Portfolio</h4>
+              <h3 className="portfolio__title">My web development projects</h3>
+            </div>
           </Reveal>
           <div className="portfolio__grid">
-            <div className="portfolio__project">
-              <Reveal>
+            <Reveal>
+              <div className="portfolio__project">
                 <div className="portfolio__img-container">
                   <a
                     href="https://stand-up-events.vercel.app/"
@@ -39,12 +41,10 @@ function Portfolio() {
                     />
                   </a>
                 </div>
-              </Reveal>
-              <div className="portfolio__text">
-                <Reveal>
+
+                <div className="portfolio__text">
                   <h3 className="portfolio__project-title">stand up events</h3>
-                </Reveal>
-                <Reveal>
+
                   <p className="portfolio__description">
                     Search for stand up events and shows featuring your favorite
                     comedians. This web application allows you to filter events
@@ -127,11 +127,11 @@ function Portfolio() {
                       </i>
                     </a>
                   </div>
-                </Reveal>
+                </div>
               </div>
-            </div>
-            <div className="portfolio__project">
-              <Reveal>
+            </Reveal>
+            <Reveal>
+              <div className="portfolio__project">
                 <div className="portfolio__img-container">
                   <a
                     href="https://itunes-playlist.vercel.app/"
@@ -145,12 +145,10 @@ function Portfolio() {
                     />
                   </a>
                 </div>
-              </Reveal>
-              <div className="portfolio__text">
-                <Reveal>
+
+                <div className="portfolio__text">
                   <h3 className="portfolio__project-title">iTunes playlist</h3>
-                </Reveal>
-                <Reveal>
+
                   <p className="portfolio__description">
                     Search for your favorite songs, albums or interprets. This
                     simple web application utilizes iTunes search API, which
@@ -189,7 +187,6 @@ function Portfolio() {
                         alt="sass_logo"
                         data-tooltip-id="scss"
                         data-tooltip-content="SCSS"
-                        k
                         data-tooltip-offset={8}
                       />
                       <Tooltip id="scss" />
@@ -225,9 +222,9 @@ function Portfolio() {
                       </i>
                     </a>
                   </div>
-                </Reveal>
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>

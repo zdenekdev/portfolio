@@ -1,7 +1,11 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-function Reveal({ children, width }) {
+type Props = {
+  children: JSX.Element;
+  width?: "fit-content" | "100%";
+};
+function Reveal({ children, width = "fit-content" }: Props) {
   const animRef = useRef(null);
   const inView = useInView(animRef, { once: true });
   const mainControls = useAnimation();

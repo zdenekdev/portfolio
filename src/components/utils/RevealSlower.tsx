@@ -1,7 +1,12 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-function RevealSlower({ children, width }) {
+type Props = {
+  children: JSX.Element;
+  width?: "fit-content" | "100%";
+};
+
+function RevealSlower({ children, width }: Props) {
   const animRef = useRef(null);
   const inView = useInView(animRef, { once: true });
   const mainControls = useAnimation();

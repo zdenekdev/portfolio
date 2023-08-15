@@ -29,7 +29,8 @@ function Hero() {
                   Hi, I'm Zdenek Kucera, a passionate Front-End Developer based
                   in Brno, Czech Republic. 📍
                 </p>
-
+              </RevealSlower>
+              <RevealSlower>
                 <span className="hero__icons">
                   <a
                     aria-label="linkedin"
@@ -158,7 +159,6 @@ function Hero() {
                       alt="sass_logo"
                       data-tooltip-id="sass"
                       data-tooltip-content="Sass/SCSS"
-                      k
                       data-tooltip-offset={8}
                     />
                     <Tooltip id="sass" />
