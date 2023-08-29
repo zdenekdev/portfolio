@@ -10,6 +10,7 @@
 <h3>Build with:</h3>
 
 » React.js <br>
+» TypeScript <br>
 
 <h2>Screenshots of the project</h2>
 

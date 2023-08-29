@@ -1,6 +1,7 @@
 import React from "react";
 import standUp from "../images/projects/stand-up.webp";
 import itunesPlaylist from "../images/projects/itunes-playlist.webp";
+import amazonProject from "../images/projects/amazon-project.webp";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,8 @@ import nextJsLogo from "../images/nextjs.svg";
 import typescriptLogo from "../images/typescript.svg";
 import tailwindLogo from "../images/tailwind.svg";
 import firebaseLogo from "../images/firebase.svg";
+import nextAuthLogo from "../images/next-auth.svg";
+import stripeLogo from "../images/stripe.svg";
 import reduxLogo from "../images/redux.svg";
 import reactLogo from "../images/react.svg";
 import sassLogo from "../images/sass.svg";
@@ -210,6 +213,123 @@ function Portfolio() {
                     <a
                       className="portfolio__demo-link"
                       href="https://itunes-playlist.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live demo
+                      <i>
+                        <FontAwesomeIcon
+                          className="portfolio__arrow-icon"
+                          icon={faArrowUpRightFromSquare}
+                        />
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="portfolio__project">
+                <div className="portfolio__img-container">
+                  <div className="portfolio__in-progress">
+                    <p className="portfolio__in-progress-text">in progress</p>
+                  </div>
+                  <a
+                    href="https://amzn-project.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      className="portfolio__img"
+                      src={amazonProject}
+                      alt="project website"
+                    />
+                  </a>
+                </div>
+
+                <div className="portfolio__text">
+                  <h3 className="portfolio__project-title">Amazon project</h3>
+
+                  <p className="portfolio__description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsam non repellat, aut quidem labore error accusamus
+                    corrupti eum voluptates. Laudantium quas quaerat amet
+                    voluptatem? Debitis, fugit numquam eaque ducimus
+                    reprehenderit deserunt ea.
+                  </p>
+
+                  <ul className="portfolio__stack">
+                    <li className="portfolio__tech">
+                      <img
+                        className="portfolio__tech-img"
+                        src={nextJsLogo}
+                        alt="next_js_logo"
+                        data-tooltip-id="next"
+                        data-tooltip-content="Next.js"
+                      />
+                      <Tooltip id="next" />
+                    </li>
+                    <li className="portfolio__tech">
+                      <img
+                        className="portfolio__tech-img"
+                        src={reduxLogo}
+                        alt="redux_logo"
+                        data-tooltip-id="redux"
+                        data-tooltip-content="Redux"
+                      />
+                      <Tooltip id="redux" />
+                    </li>
+                    <li className="portfolio__tech">
+                      <img
+                        className="portfolio__tech-img portfolio__tech-next-auth"
+                        src={nextAuthLogo}
+                        alt="next_auth_logo"
+                        data-tooltip-id="next_auth"
+                        data-tooltip-content="NextAuth.js"
+                        data-tooltip-offset={7}
+                      />
+                      <Tooltip id="next_auth" />
+                    </li>
+                    <li className="portfolio__tech">
+                      <img
+                        className="portfolio__tech-img portfolio__tech-stripe"
+                        src={stripeLogo}
+                        alt="stripe_logo"
+                        data-tooltip-id="stripe"
+                        data-tooltip-content="Stripe Checkout"
+                      />
+                      <Tooltip id="stripe" />
+                    </li>
+                    <li className="portfolio__tech">
+                      <img
+                        className="portfolio__tech-img portfolio__tech-tailwind"
+                        src={tailwindLogo}
+                        alt="tailwind_logo"
+                        data-tooltip-id="tailwind"
+                        data-tooltip-content="Tailwind CSS"
+                        data-tooltip-offset={14}
+                      />
+                      <Tooltip id="tailwind" />
+                    </li>
+                  </ul>
+                  <div className="portfolio__links">
+                    <a
+                      className="portfolio__github-link"
+                      href="https://github.com/zdenekdev/amazon-project"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Code
+                      <i>
+                        <FontAwesomeIcon
+                          className="portfolio__github-icon"
+                          icon={faGithub}
+                        />
+                      </i>
+                    </a>
+                    <a
+                      className="portfolio__demo-link"
+                      href="https://amzn-project.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >

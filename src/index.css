@@ -385,7 +385,30 @@ h3 {
   background-color: var(--color-quaternary);
 }
 
+.portfolio__in-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: var(--color-quaternary);
+}
+
+.portfolio__in-progress-text {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
 .portfolio__img-container {
+  position: relative;
   max-width: 31rem;
   max-height: 24rem;
   border-radius: 1.1rem;
@@ -458,6 +481,14 @@ h3 {
 
 .portfolio__tech-sass {
   height: 2rem;
+}
+
+.portfolio__tech-next-auth {
+  height: 2rem;
+}
+
+.portfolio__tech-stripe {
+  height: 1.6rem;
 }
 
 .portfolio__links {
