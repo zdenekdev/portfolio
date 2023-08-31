@@ -231,9 +231,6 @@ function Portfolio() {
             <Reveal>
               <div className="portfolio__project">
                 <div className="portfolio__img-container">
-                  <div className="portfolio__in-progress">
-                    <p className="portfolio__in-progress-text">in progress</p>
-                  </div>
                   <a
                     href="https://amzn-project.vercel.app/"
                     target="_blank"
@@ -248,14 +245,19 @@ function Portfolio() {
                 </div>
 
                 <div className="portfolio__text">
-                  <h3 className="portfolio__project-title">Amazon project</h3>
+                  <h3 className="portfolio__project-title">
+                    Amazon project
+                    <span className="portfolio__project-title-span">
+                      {" "}
+                      (tutorial)
+                    </span>
+                  </h3>
 
                   <p className="portfolio__description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ipsam non repellat, aut quidem labore error accusamus
-                    corrupti eum voluptates. Laudantium quas quaerat amet
-                    voluptatem? Debitis, fugit numquam eaque ducimus
-                    reprehenderit deserunt ea.
+                    The Amazon project is a basic web application that allows
+                    users to sign in using their Google account and add or
+                    remove items from the shopping cart. As a source of product
+                    data, I have used Fake Store API.
                   </p>
 
                   <ul className="portfolio__stack">
@@ -268,6 +270,17 @@ function Portfolio() {
                         data-tooltip-content="Next.js"
                       />
                       <Tooltip id="next" />
+                    </li>
+                    <li className="portfolio__tech">
+                      {" "}
+                      <img
+                        className="portfolio__tech-img portfolio__tech-typescript"
+                        src={typescriptLogo}
+                        alt="typescript_logo"
+                        data-tooltip-id="ts"
+                        data-tooltip-content="TypeScript"
+                      />
+                      <Tooltip id="ts" />
                     </li>
                     <li className="portfolio__tech">
                       <img
@@ -289,16 +302,6 @@ function Portfolio() {
                         data-tooltip-offset={7}
                       />
                       <Tooltip id="next_auth" />
-                    </li>
-                    <li className="portfolio__tech">
-                      <img
-                        className="portfolio__tech-img portfolio__tech-stripe"
-                        src={stripeLogo}
-                        alt="stripe_logo"
-                        data-tooltip-id="stripe"
-                        data-tooltip-content="Stripe Checkout"
-                      />
-                      <Tooltip id="stripe" />
                     </li>
                     <li className="portfolio__tech">
                       <img

@@ -444,6 +444,10 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.portfolio__project-title-span {
+  text-transform: none;
+}
+
 .portfolio__stack {
   display: flex;
   justify-content: center;
