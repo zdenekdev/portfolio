@@ -422,7 +422,7 @@ h3 {
 }
 
 .portfolio__img:hover {
-  transform: scale(1.015);
+  transform: scale(1.01);
 }
 
 .portfolio__text {

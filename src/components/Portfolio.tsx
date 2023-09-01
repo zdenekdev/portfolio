@@ -10,7 +10,6 @@ import typescriptLogo from "../images/typescript.svg";
 import tailwindLogo from "../images/tailwind.svg";
 import firebaseLogo from "../images/firebase.svg";
 import nextAuthLogo from "../images/next-auth.svg";
-import stripeLogo from "../images/stripe.svg";
 import reduxLogo from "../images/redux.svg";
 import reactLogo from "../images/react.svg";
 import sassLogo from "../images/sass.svg";
@@ -256,8 +255,9 @@ function Portfolio() {
                   <p className="portfolio__description">
                     The Amazon project is a basic web application that allows
                     users to sign in using their Google account and add or
-                    remove items from the shopping cart. As a source of product
-                    data, I have used Fake Store API.
+                    remove items from the shopping cart. I have used the Fake
+                    Store API as a source of product data and Local Storage to
+                    store and retrieve shopping cart items.
                   </p>
 
                   <ul className="portfolio__stack">
