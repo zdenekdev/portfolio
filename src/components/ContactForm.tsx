@@ -32,17 +32,32 @@ function ContactForm() {
       <form ref={form} onSubmit={sendEmail} className="contactForm__formular">
         <div className="contactForm__name">
           <label htmlFor="user_name">Name</label>
-          <input type="text" name="user_name" id="user_name" />
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            className="contactForm__name-input"
+          />
         </div>
         <div className="contactForm__email">
           <label htmlFor="user_email">Email</label>
-          <input type="email" name="user_email" id="user_email" />
+          <input
+            type="email"
+            name="user_email"
+            id="user_email"
+            className="contactForm__email-input"
+          />
         </div>
         <div className="contactForm__message">
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" />
+          <textarea
+            name="message"
+            id="message"
+            className="contactForm__message-input"
+            rows={5}
+          />
         </div>
-        <input type="submit" value="Send" className="contactForm__input" />
+        <input type="submit" value="Send" className="contactForm__button" />
       </form>
     </div>
   );
