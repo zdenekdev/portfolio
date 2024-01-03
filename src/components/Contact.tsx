@@ -5,6 +5,7 @@ import {
   faMobileScreenButton,
 } from "@fortawesome/free-solid-svg-icons";
 import Reveal from "./utils/Reveal";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -18,30 +19,33 @@ function Contact() {
             </div>
           </Reveal>
           <Reveal>
-            <div className="contact__icons">
-              <div className="contact__icon-box">
-                <span className="contact__icon">
-                  <i className="contact__email-icon">
-                    <FontAwesomeIcon icon={faEnvelopeOpenText} />
-                  </i>
-                </span>
-                <div className="contact__info">
-                  <h3>E-mail</h3>
-                  <p className="contact__details">kucera.contact@gmail.com</p>
+            <>
+              <div className="contact__icons">
+                <div className="contact__icon-box">
+                  <span className="contact__icon">
+                    <i className="contact__email-icon">
+                      <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                    </i>
+                  </span>
+                  <div className="contact__info">
+                    <h3>E-mail</h3>
+                    <p className="contact__details">kucera.contact@gmail.com</p>
+                  </div>
+                </div>
+                <div className="contact__icon-box">
+                  <span className="contact__icon">
+                    <i className="contact__phone-icon">
+                      <FontAwesomeIcon icon={faMobileScreenButton} />
+                    </i>
+                  </span>
+                  <div className="contact__info">
+                    <h3>Phone</h3>
+                    <p className="contact__details">+420 608 966 345</p>
+                  </div>
                 </div>
               </div>
-              <div className="contact__icon-box">
-                <span className="contact__icon">
-                  <i className="contact__phone-icon">
-                    <FontAwesomeIcon icon={faMobileScreenButton} />
-                  </i>
-                </span>
-                <div className="contact__info">
-                  <h3>Phone</h3>
-                  <p className="contact__details">+420 608 966 345</p>
-                </div>
-              </div>
-            </div>
+              <ContactForm />
+            </>
           </Reveal>
         </div>
       </div>
