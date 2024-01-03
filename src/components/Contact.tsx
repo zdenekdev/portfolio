@@ -1,9 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelopeOpenText,
-  faMobileScreenButton,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Reveal from "./utils/Reveal";
 import ContactForm from "./ContactForm";
 
@@ -24,11 +22,10 @@ function Contact() {
                 <div className="contact__icon-box">
                   <span className="contact__icon">
                     <i className="contact__email-icon">
-                      <FontAwesomeIcon icon={faEnvelopeOpenText} />
+                      <FontAwesomeIcon icon={faEnvelope} />
                     </i>
                   </span>
                   <div className="contact__info">
-                    <h3>E-mail</h3>
                     <p className="contact__details">kucera.contact@gmail.com</p>
                   </div>
                 </div>
@@ -39,7 +36,6 @@ function Contact() {
                     </i>
                   </span>
                   <div className="contact__info">
-                    <h3>Phone</h3>
                     <p className="contact__details">+420 608 966 345</p>
                   </div>
                 </div>

@@ -31,7 +31,7 @@ function ContactForm() {
 
       <form ref={form} onSubmit={sendEmail} className="contactForm__formular">
         <div className="contactForm__name">
-          <label htmlFor="user_name">Name</label>
+          <label htmlFor="user_name">Your name</label>
           <input
             type="text"
             name="user_name"
@@ -40,7 +40,7 @@ function ContactForm() {
           />
         </div>
         <div className="contactForm__email">
-          <label htmlFor="user_email">Email</label>
+          <label htmlFor="user_email">Your email</label>
           <input
             type="email"
             name="user_email"

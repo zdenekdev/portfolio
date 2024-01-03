@@ -534,12 +534,13 @@ h3 {
 
 .contact__title {
   font-size: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .contact__icons {
   display: flex;
   gap: 5rem;
+  margin-bottom: 3rem;
 }
 
 .contact__icon-box {
@@ -552,22 +553,22 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 2.8rem;
+  width: 2.8rem;
   padding: 1.4rem;
   background-color: var(--color-quaternary);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact__email-icon {
   color: var(--color-secondary);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .contact__phone-icon {
   color: var(--color-secondary);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .contact__info {
@@ -582,12 +583,15 @@ h3 {
   gap: 1rem;
 }
 
+.contactForm__heading {
+  padding-bottom: 1rem;
+}
+
 .contactForm__name,
 .contactForm__email,
 .contactForm__message {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
   max-width: 30rem;
   width: 100%;
   font-weight: 500;
@@ -597,12 +601,11 @@ h3 {
 .contactForm__email-input,
 .contactForm__message-input {
   padding: 0.7rem;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
   outline-color: var(--color-secondary);
-  /* background-color: var(--color-tertiary);
-  border: transparent; */
   border: 1.5px solid #e7e7e9;
   border-radius: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .contactForm__name-input:hover,
@@ -614,7 +617,7 @@ h3 {
 .contactForm__name-input:focus,
 .contactForm__email-input:focus,
 .contactForm__message-input:focus {
-  box-shadow: 0 0 0 4px rgba(20, 126, 251, 0.1);
+  /* box-shadow: 0 0 0 4px rgba(20, 126, 251, 0.1); */
 }
 
 .contactForm__button {
@@ -820,11 +823,6 @@ h3 {
   .contact__info {
     flex-direction: column;
     align-items: center;
-  }
-
-  .contactForm__heading {
-    color: red;
-    height: 500px;
   }
 
   .footer {
