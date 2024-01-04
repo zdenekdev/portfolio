@@ -16,8 +16,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
-          //   e.currentTarget.reset();
-          console.log("email sent successfully");
+          form.current!.reset();
         },
         (error) => {
           console.log(error.text);

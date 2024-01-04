@@ -17,31 +17,31 @@ function Contact() {
             </div>
           </Reveal>
           <Reveal>
-            <>
-              <div className="contact__icons">
-                <div className="contact__icon-box">
-                  <span className="contact__icon">
-                    <i className="contact__email-icon">
-                      <FontAwesomeIcon icon={faEnvelope} />
-                    </i>
-                  </span>
-                  <div className="contact__info">
-                    <p className="contact__details">kucera.contact@gmail.com</p>
-                  </div>
-                </div>
-                <div className="contact__icon-box">
-                  <span className="contact__icon">
-                    <i className="contact__phone-icon">
-                      <FontAwesomeIcon icon={faMobileScreenButton} />
-                    </i>
-                  </span>
-                  <div className="contact__info">
-                    <p className="contact__details">+420 608 966 345</p>
-                  </div>
+            <div className="contact__icons">
+              <div className="contact__icon-box">
+                <span className="contact__icon">
+                  <i className="contact__email-icon">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </i>
+                </span>
+                <div className="contact__info">
+                  <p className="contact__details">kucera.contact@gmail.com</p>
                 </div>
               </div>
-              <ContactForm />
-            </>
+              <div className="contact__icon-box">
+                <span className="contact__icon">
+                  <i className="contact__phone-icon">
+                    <FontAwesomeIcon icon={faMobileScreenButton} />
+                  </i>
+                </span>
+                <div className="contact__info">
+                  <p className="contact__details">+420 608 966 345</p>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal>
+            <ContactForm />
           </Reveal>
         </div>
       </div>
