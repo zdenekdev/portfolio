@@ -4,7 +4,6 @@ import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Reveal from "./utils/Reveal";
 import ContactForm from "./ContactForm";
-import ContactFormExample from "./ContactFormExample";
 
 function Contact() {
   return (

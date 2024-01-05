@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,10 +19,6 @@ function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [formButton, setFormButton] = useState("Processing...");
-
-  // const onSubmit: SubmitHandler<formInputs> = (data) => {
-  //   setFormButton("Processing...");
-  // };
 
   const sendEmail = () => {
     setButtonDisabled(true);
