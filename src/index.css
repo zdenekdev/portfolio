@@ -579,6 +579,7 @@ h3 {
 
 .contactForm {
   width: 30rem;
+  /* opacity: 0.3; */
 }
 
 .contactForm__formular {
@@ -621,7 +622,15 @@ h3 {
 .contactForm__name-input:focus,
 .contactForm__email-input:focus,
 .contactForm__message-input:focus {
-  /* box-shadow: 0 0 0 4px rgba(20, 126, 251, 0.1); */
+  box-shadow: 0 0 0 4px rgba(20, 126, 251, 0.1);
+}
+
+.contactForm__error-msg {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #dc362e;
+  margin-top: 0.2rem;
 }
 
 .contactForm__button {
