@@ -25,7 +25,11 @@ function Contact() {
                   </i>
                 </span>
                 <div className="contact__info">
-                  <p className="contact__details">kucera.contact@gmail.com</p>
+                  <a
+                    className="contact__details"
+                    href="mailto:kucera.contact@gmail.com">
+                    kucera.contact@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="contact__icon-box">
@@ -35,7 +39,9 @@ function Contact() {
                   </i>
                 </span>
                 <div className="contact__info">
-                  <p className="contact__details">+420 608 966 345</p>
+                  <a className="contact__details" href="tel:+420608966345">
+                    +420 608 966 345
+                  </a>
                 </div>
               </div>
             </div>
