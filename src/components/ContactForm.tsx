@@ -24,7 +24,7 @@ function ContactForm() {
   const [formButton, setFormButton] = useState("Send");
   const [loading, setLoading] = useState(false);
   const [activeForm, setActiveForm] = useState(true);
-  const [formDisplayed, setFormDisplayed] = useState(false);
+  const [formDisplayed, setFormDisplayed] = useState(true);
   const override: CSSProperties = {
     position: "absolute",
     right: "0.7rem",
