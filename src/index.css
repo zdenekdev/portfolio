@@ -587,6 +587,7 @@ h3 {
 
 .contactForm {
   width: 30rem;
+  min-height: 27.3rem;
 }
 
 .contactForm__thank-you-msg {
