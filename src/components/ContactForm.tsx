@@ -65,9 +65,9 @@ function ContactForm() {
         {!formDisplayed && (
           <motion.div
             key="modal"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
             className="contactForm__thank-you-msg">
             <img
               className="contactForm__email-icon"
@@ -88,9 +88,9 @@ function ContactForm() {
         {formDisplayed && (
           <motion.div
             key="modal"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
             className="contactForm__container">
             <h3 className="contactForm__heading">Contact form</h3>
             <form
