@@ -24,7 +24,7 @@ function ContactForm() {
   const [formButton, setFormButton] = useState("Send");
   const [loading, setLoading] = useState(false);
   const [activeForm, setActiveForm] = useState(true);
-  const [formDisplayed, setFormDisplayed] = useState(true);
+  const [formDisplayed, setFormDisplayed] = useState(false);
   const override: CSSProperties = {
     position: "absolute",
     right: "0.7rem",
@@ -66,7 +66,10 @@ function ContactForm() {
           <motion.div
             key="modal-msg"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 0.5 },
+            }}
             exit={{ opacity: 0 }}
             className="contactForm__thank-you-msg">
             <img
