@@ -44,11 +44,9 @@ function ContactForm() {
         "OcZLgXNyVy6jnKdjG"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           setLoading(false);
           form.current!.reset();
-          setFormButton("Message sent");
           setFormDisplayed(false);
         },
         (error) => {
@@ -169,7 +167,6 @@ function ContactForm() {
                       message: "Message must be at least 20 characters long",
                     },
                   })}
-                  // name="message"
                   id="message"
                   className="contactForm__message-input"
                   rows={5}
