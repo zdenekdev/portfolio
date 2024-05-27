@@ -4,10 +4,12 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import htmlLogo from "../images/html.svg";
 import cssLogo from "../images/css.svg";
 import javascriptLogo from "../images/javascript.svg";
+import phpLogo from "../images/php.svg";
 import typescriptLogo from "../images/typescript.svg";
 import reactLogo from "../images/react.svg";
 import tailwindLogo from "../images/tailwind.svg";
 import sassLogo from "../images/sass.svg";
+import bootstrapLogo from "../images/bootstrap.svg";
 import nextJsLogo from "../images/nextjs.svg";
 import reduxLogo from "../images/redux.svg";
 import { Tooltip } from "react-tooltip";
@@ -22,11 +24,11 @@ function Hero() {
           <div className="hero__main">
             <div className="hero__text">
               <Reveal>
-                <h1 className="hero__title">Front-End Developer</h1>
+                <h1 className="hero__title">Web Developer</h1>
               </Reveal>
               <RevealSlower>
                 <p className="hero__intro">
-                  Hi, I'm Zdenek Kucera, a passionate Front-End Developer based
+                  Hi, I'm Zdenek Kucera, a passionate junior web developer based
                   in Brno, Czech Republic. 📍
                 </p>
               </RevealSlower>
@@ -36,8 +38,7 @@ function Hero() {
                     aria-label="linkedin"
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/kucerazdenek/"
-                  >
+                    href="https://www.linkedin.com/in/kucerazdenek/">
                     <i>
                       <FontAwesomeIcon
                         className="hero__in-icon"
@@ -49,8 +50,7 @@ function Hero() {
                     aria-label="linkedin"
                     rel="noreferrer"
                     target="_blank"
-                    href="https://github.com/zdenekdev"
-                  >
+                    href="https://github.com/zdenekdev">
                     <i>
                       <FontAwesomeIcon
                         className="hero__github-icon"
@@ -103,6 +103,16 @@ function Hero() {
                   </li>
                   <li className="hero__logo">
                     <img
+                      className="hero__logo-img hero__logo-php"
+                      src={phpLogo}
+                      alt="php_logo"
+                      data-tooltip-id="php"
+                      data-tooltip-content="PHP"
+                    />
+                    <Tooltip id="php" />
+                  </li>
+                  {/* <li className="hero__logo">
+                    <img
                       className="hero__logo-img hero__logo-typescript"
                       src={typescriptLogo}
                       alt="typescript_logo"
@@ -110,7 +120,7 @@ function Hero() {
                       data-tooltip-content="TypeScript"
                     />
                     <Tooltip id="ts" />
-                  </li>
+                  </li> */}
                   <li className="hero__logo">
                     <img
                       className="hero__logo-img hero__logo-react"
@@ -131,7 +141,7 @@ function Hero() {
                     />
                     <Tooltip id="redux" />
                   </li>
-                  <li className="hero__logo">
+                  {/* <li className="hero__logo">
                     <img
                       className="hero__logo-img"
                       src={nextJsLogo}
@@ -140,7 +150,7 @@ function Hero() {
                       data-tooltip-content="Next.js"
                     />
                     <Tooltip id="next" />
-                  </li>
+                  </li> */}
                   <li className="hero__logo">
                     <img
                       className="hero__logo-img hero__logo-tailwind"
@@ -152,7 +162,7 @@ function Hero() {
                     />
                     <Tooltip id="tailwind" />
                   </li>
-                  <li className="hero__logo">
+                  {/* <li className="hero__logo">
                     <img
                       className="hero__logo-img"
                       src={sassLogo}
@@ -162,6 +172,17 @@ function Hero() {
                       data-tooltip-offset={8}
                     />
                     <Tooltip id="sass" />
+                  </li> */}
+                  <li className="hero__logo">
+                    <img
+                      className="hero__logo-img hero__logo-bootstrap"
+                      src={bootstrapLogo}
+                      alt="bootstrap_logo"
+                      data-tooltip-id="bootstrap"
+                      data-tooltip-content="Bootstrap"
+                      data-tooltip-offset={8}
+                    />
+                    <Tooltip id="bootstrap" />
                   </li>
                 </ul>
               </div>
