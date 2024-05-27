@@ -17,19 +17,17 @@ function About() {
             <Reveal>
               <div>
                 <h4 className="about__heading">About me</h4>
-                <h3 className="about__title">
-                  A dedicated Front-End Developer
-                </h3>
+                <h3 className="about__title">An enthusiastic Web Developer</h3>
               </div>
             </Reveal>
             <Reveal>
               <div className="about__text">
                 <p className="about__text-para">
-                  I'm a self taught Front-End Developer with a proficiency in
-                  HTML, CSS, JavaScript, TypeScript, React, Tailwind, and SCSS.
-                  Additionally, I have hands-on experience working with Redux,
-                  the state management tool, and Firebase, the cloud-hosted
-                  database.
+                  I'm a self taught web developer with a proficiency in HTML,
+                  CSS, JavaScript, React, Tailwind, Bootstrap and a bit of PHP.
+                  Additionally, I have hands-on experience working with
+                  Wordpress, Redux (a state management tool), and Firebase (a
+                  cloud-hosted database).
                 </p>
                 <p className="about__text-para">
                   I've used all mentioned technologies in my projects in the{" "}
@@ -40,7 +38,7 @@ function About() {
                 </p>
                 <p className="about__text-para">
                   My goal is to continuously grow as a developer while deepening
-                  my knowledge of front-end technologies. I would love to be a
+                  my knowledge of full stack technologies. I would love to be a
                   valuable member of a team that is passionate about what they
                   create and consistently move forward.
                 </p>
