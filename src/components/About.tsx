@@ -25,9 +25,9 @@ function About() {
                 <p className="about__text-para">
                   I'm a self taught web developer with a proficiency in HTML,
                   CSS, JavaScript, React, Tailwind, Bootstrap and a bit of PHP.
-                  Additionally, I have hands-on experience working with
-                  Wordpress, Redux (a state management tool), and Firebase (a
-                  cloud-hosted database).
+                  Additionally, I have hands-on experience working with Redux (a
+                  react state management tool), Firebase (a cloud-hosted
+                  database) and Wordpress (Content Management System).
                 </p>
                 <p className="about__text-para">
                   I've used all mentioned technologies in my projects in the{" "}
